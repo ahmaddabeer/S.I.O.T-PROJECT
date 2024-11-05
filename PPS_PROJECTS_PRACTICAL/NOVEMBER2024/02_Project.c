@@ -1,37 +1,18 @@
-//Object:
+//Object : Write a program in to input any alphabet and check the given alphabet is vowels or consonent.claculate using if.
+//DATE: 04|11|2024
 #include <stdio.h>
-
-/*
-
-git initializs fist time pahli baar kar raheha to gi init
-
-fir check file status
-git status
- 
-
- fir 
-  stages files changes add karne kalea 
-   git add .
-
-   ye specific file ko add karne ka lea 
-   git add filename.ext
-
-   commmit changes 
-   aap ne kya cange kiya ha uko batao
-   git commit -m " kya change kiya ha "
+void main()
+{
+    char c;
+    //take user charakter
+    printf("Enter charakter to check vowels or consonant :\n");
+    scanf("%c", &c);
+    //calculate using if 
+    if(c == 'A'||c == 'a'||c == 'e'||c == 'E'||c == 'i'||c == 'I'||c == 'o' || c =='O'||c == 'u'|| c== 'U')
+    printf("Yes you enter a vowel \n");
+    else
+    printf("Yes this a consonent\n");
+    printf("Thank You");
 
 
-   ab github par upload karne kale 
-    git push origin branch-name
-
-
-    short summry 
-    git status
-git add .
-git commit -m "Descriptive message about the changes"
-git push origin main
-
-
-
-
-*/
+}
