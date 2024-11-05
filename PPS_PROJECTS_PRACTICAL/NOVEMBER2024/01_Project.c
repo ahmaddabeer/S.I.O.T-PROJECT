@@ -3,4 +3,5 @@
 #include <stdio.h>
 void main()
 {
+    printf("Enter youname ");
 }
