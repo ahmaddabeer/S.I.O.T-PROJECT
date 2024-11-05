@@ -23,4 +23,6 @@ void main()
         printf("Congularation you select yelloHouse: ");
     else
         printf("Invalid house colour:");
+        
+
 }
