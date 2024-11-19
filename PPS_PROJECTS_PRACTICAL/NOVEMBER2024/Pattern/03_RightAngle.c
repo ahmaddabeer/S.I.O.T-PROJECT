@@ -1,4 +1,4 @@
-//Object : Write a program in c to print given pattern 
+// Object : Write a program in c to print given pattern
 /*
 1
 12
@@ -7,13 +7,15 @@
 12345
 */
 #include <stdio.h>
-void main(){
+void main()
+{
 
-    for(int i=1; i<=5; i++){
-        for(int j = 1; j<=i; j++){
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
             printf("%d", j);
         }
         printf("\n");
     }
-    
 }
