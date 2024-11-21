@@ -20,4 +20,8 @@ int main()
     scanf("%d", &n);
     fibonachi(n);
     return 0;
-}
+
+
+}// not clear logic  try again 
+
+ 
