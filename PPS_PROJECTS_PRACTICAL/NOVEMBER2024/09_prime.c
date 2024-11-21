@@ -1,30 +1,38 @@
-// OBJECT: Write a program in c to check given number is prime or not .
-//  DATE:
+// Object:Write a program in c to check the given number is prime or not.
 #include <stdio.h>
 int main()
 {
-    int n, isPrime;
-    printf("Enter a number to check given numbre is prime or not :\n");
-    scanf("%d", &n);
-    if (n <= 1)
-    {
-        printf("%d The given number is not prome \n", n);
-        return 0;
-    }
 
-    for (int i = 2; i <= n; i++)
+    int num, isPrime = 1, i, cond;
+    do
     {
-        if (n % i == 0)
+        printf("\nEnter a number to check the given number is prime or not");
+        scanf("%d", &num);
+        // first we check the given number is <= 1 so direct print this is not a prime.
+
+        if (num <= 1)
         {
-            isPrime = 0;
-            break;
+            printf("%d This number is not a prime :\n", num);
+            return 0;
         }
-    }
 
-    if (  = 0)
-    {
-        printf("%d this is a prime number :", n);
-    }
-    else
-        printf("%d this is not a prime number: ", n);
+        for (i = 2; i <= num / 2; i++)
+        {
+            if (num % i == 0)
+            {
+                isPrime = 0;
+                break;
+            }
+        }
+        if (isPrime == 1)
+        {
+            printf("%d Yes Prime \n", num);
+        }
+        else
+            printf("%d NOT a prime\n ", num);
+        printf("Do you want to again run code press 1 for yes and no for 0");
+        scanf("%d", &cond);
+    } while (cond == 1);
+
+    return 0;
 }
