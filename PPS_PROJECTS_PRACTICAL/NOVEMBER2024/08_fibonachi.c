@@ -1,27 +1,18 @@
 // Object: Write a program in c to print fibonachi series .
 // DATE:06|11|2024
+
 #include <stdio.h>
-void fibonachi(int n)
+void main()
 {
-    int a = 0, b = 1, next;
-    for (int i = 0; i <= n; i++)
-    {
-        printf("%d", a);
-        next = a + b;
-        a = b;
-        b = next;
-    }
+
+     int first = 0,second = 1,n,i;
+     printf("Enter the last term to print fibonchi series\n ");
+     scanf("%d", &n);
+
+     printf("Starting number is first = %d and second = %d \n", first,second);
+
+     for(i = 3; i<=n;i++){
+        
+     }
+
 }
-
-int main()
-{
-    int n;
-    printf("Enter the last number and print the fibonachi nuber in between:\n");
-    scanf("%d", &n);
-    fibonachi(n);
-    return 0;
-
-
-}// not clear logic  try again 
-
- 
