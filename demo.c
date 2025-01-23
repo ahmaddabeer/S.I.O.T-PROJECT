@@ -1,19 +1,14 @@
 #include <stdio.h>
-void main()
-{ // Write a program in c to calculate Armstorm number
+#include <stdlib.h>
+int main(){
 
-    int i;
-
-   for(i = 1; i<= 10; i++){
-
+    FILE *ptr = NULL;
+    ptr = fopen("myfile.txt", "r");
+    char c= fgetc(ptr);
+    printf("The character i read was %c\n", c);
+     c= fgetc(ptr);
+    printf("The character i read was %c\n", c);
     
-   }
-
-
-
-
-
-
-
-  
+    fclose(ptr);
+    return 0;
 }
